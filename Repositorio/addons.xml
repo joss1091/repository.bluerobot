@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="script.codegen" name="code gen" version="0.0.1" provider-name="joss1091">
+	<requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+		<import addon="script.module.requests" version="2.12.4"/>
+	</requires>
+	<extension point="xbmc.python.script" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="es">Obtener codigo alfanumerico</summary>
+		<description lang="es">Addon para que obtener un codigo para ingresar a nuestra APP y poder a realizar el pago de la susbcripcion</description>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+		<forum>http://forum.kodi.tv/showthread.php?tid=209948</forum>
+		<source>https://github.com/joss1091/script.codegen</source>
+		<website>Kodi.tv</website>
+		<email>joss1091@gmail.com</email>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot></screenshot>
+			<screenshot></screenshot>
+			<screenshot></screenshot>
+		</assets>
+		<news>Obtener codigo alfanumerico para el receptor.</news>
+	</extension>
+</addon>
+
+<addon id="repository.bluerobot" name="Bluerobot Repositorio" version="1.0.0" provider-name="Jose Vergara">
+    <extension point="xbmc.addon.repository" name="Bluerobot repositorio">
+        <info>https://raw.githubusercontent.com/joss1091/repository.bluerobot/master/Repositorio/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/joss1091/repository.bluerobot/master/Repositorio/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/joss1091/master/Repositorio/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Repositorio para bluerobot</summary>
+        <description>Repositorio para bluerobot</description>
+        <disclaimer>Repositorio para bluerobot</disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
+</addons>
