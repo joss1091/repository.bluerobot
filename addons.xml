@@ -111,18 +111,13 @@
 	</extension>
 </addon>
 
-<addon id="script.codegen" name="code gen" version="0.1.1" provider-name="joss1091">
+<addon id="script.codegen" name="code gen" version="0.1.2" provider-name="joss1091">
 	<requires>
 		<import addon="xbmc.python" version="2.14.0"/>
 		<import addon="script.module.requests" version="2.12.4"/>
 	</requires>
 	<extension point="xbmc.python.script" library="addon.py">
 		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.addon.repository" name="bluerobot">
-		<info compressed="true">https://raw.githubusercontent.com/joss1091/repository.bluerobot/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/joss1091/repository.bluerobot/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/joss1091/repository.bluerobot/master/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
