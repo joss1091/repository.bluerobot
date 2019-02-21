@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="plugin.video.Catoal"
+       name="[COLOR gold]Catoal[/COLOR][COLOR blue] 5[/COLOR].[COLOR yellow]4[/COLOR].[COLOR red]0[/COLOR]"
+       version="5.4.0"
+       provider-name="Catoal">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Creado por Catoal</summary>
+    <description>Catoal 2017</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="script.codegen" name="code gen" version="0.0.1" provider-name="joss1091">
 	<requires>
 		<import addon="xbmc.python" version="2.14.0"/>
@@ -14,8 +44,8 @@
 		<description lang="es">Addon para que obtener un codigo para ingresar a nuestra APP y poder a realizar el pago de la susbcripcion</description>
 		<license>GNU General Public License, v2</license>
 		<language></language>
-		<forum>http://forum.kodi.tv/showthread.php?tid=209948</forum>
-		<source>https://github.com/joss1091/script.codegen</source>
+		<forum></forum>
+		<source></source>
 		<website>Kodi.tv</website>
 		<email>joss1091@gmail.com</email>
 		<assets>
