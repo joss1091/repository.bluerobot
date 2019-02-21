@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addon id="skin.ghost" version="1.0.0" name="Ghost" provider-name="Ghost Systems">
+	<requires>
+		<import addon="xbmc.gui" version="5.13.0"/>
+		<import addon="resource.uisounds.grid" version="0.0.1"/>
+		<import addon="script.grab.fanart" version="0.14.1"/>
+		<import addon="script.skin.helper.service" version="1.0.11"/>
+		<import addon="script.skinshortcuts" version="1.0.11"/>
+		<import addon="script.watchlist" version="0.0.1"/>
+		<import addon="script.skin.helper.widgets" version="1.0.0"/>
+		<import addon="script.skin.helper.backgrounds" version="1.0.21"/>
+	</requires>
+	<extension point="xbmc.gui.skin" effectslowdown="1.00" debugging="false">
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml"/>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshots/01.jpg</screenshot>
+			<screenshot>resources/screenshots/02.jpg</screenshot>
+			<screenshot>resources/screenshots/03.jpg</screenshot>
+			<screenshot>resources/screenshots/04.jpg</screenshot>
+			<screenshot>resources/screenshots/05.jpg</screenshot>
+		</assets>
+		<summary lang="en">Ghost skin.</summary>
+		<description lang="en_GB">Ghost skin.</description>
+		<description lang="de_DE">Ghost skin.</description>
+		<description lang="es_ES">Ghost skin.</description>
+		<description lang="fr_FR">Ghost skin.</description>
+		<description lang="el_GR">Ghost skin.</description>
+		<description lang="nl_NL">Ghost skin.</description>
+		<description lang="po_NO">Ghost skin.</description>
+		<description lang="pl_PL">Ghost skin.</description>
+		<description lang="sr_RS">Ghost skin.</description>
+		<disclaimer lang="de_DE">Mäuse und Touchscreens werden nicht unterstützt</disclaimer>
+		<disclaimer lang="en_GB">Mouse and touchscreen use not supported</disclaimer>
+		<disclaimer lang="es_ES">El uso de ratón y/o pantalla táctil no está soportado</disclaimer>
+		<disclaimer lang="fi_FI">Hiiren ja kosketusnäytön käyttöä ei tueta</disclaimer>
+		<disclaimer lang="fr_FR">Souris et écran tactile non supportés</disclaimer>
+		<disclaimer lang="gl_ES">Rato e pantalla táctil non soportados</disclaimer>
+		<disclaimer lang="el_GR">Το ποντίκι και το πληκτρολόγιο δεν υποστηρίζονται</disclaimer>
+		<disclaimer lang="ko_KR">마우스와 터치 스크린을 지원하지 않습니다 </disclaimer>
+		<disclaimer lang="lt_LT">Pelė ir liečiamasis ekranas nepalaikomi</disclaimer>
+		<disclaimer lang="nl_NL">Muis of touchscreen bediening wordt niet ondersteund</disclaimer>
+		<disclaimer lang="po_NO">Mus og touch-skjerm er ikke støttet</disclaimer>
+		<disclaimer lang="pl_PL">Mysz i ekran dotykowy nie są wspierane</disclaimer>
+		<disclaimer lang="ro_RO">Nu există suport pentru touchscreen şi mouse</disclaimer>
+		<disclaimer lang="sr_RS">Миш и тачскрин нису подржани</disclaimer>
+		<disclaimer lang="sv_SE">Mus och pekskärm stöds inte</disclaimer>
+		<platform>all</platform>
+		<license></license>
+	</extension>
+</addon>
