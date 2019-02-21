@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon
+  id="pvr.livestreamclient"
+  version="1.0.3"
+  name="PVR IPTV Livestream client"
+  provider-name="tvstream">
+  <requires>@ADDON_DEPENDS@</requires>
+  <extension
+    point="xbmc.pvrclient"
+    library_@PLATFORM@="@LIBRARY_FILENAME@"/>
+  <extension point="xbmc.addon.metadata">
+
+    <summary lang="en_US">Complemento Kodi PVR de IPTV para mediaflix.</summary>
+    <summary lang="es_AR">Complemento Kodi PVR de IPTV para mediaflix.</summary>
+    <summary lang="es_ES">Complemento Kodi PVR de IPTV para mediaflix.</summary>
+    <summary lang="es_MX">Complemento Kodi PVR de IPTV para mediaflix.</summary>
+
+    <description lang="en_US">Cliente PVR IPTV para la plataforma de mediaflix, Tiene soporte para listas M3u8 y tiene soporte para XMLTV</description>
+    <description lang="es_AR">Cliente PVR IPTV para la plataforma de mediaflix, Tiene soporte para listas M3u8 y tiene soporte para XMLTV</description>
+    <description lang="es_ES">Cliente PVR IPTV para la plataforma de mediaflix, Tiene soporte para listas M3u8 y tiene soporte para XMLTV</description>
+    <description lang="es_MX">Cliente PVR IPTV para la plataforma de mediaflix, Tiene soporte para listas M3u8 y tiene soporte para XMLTV</description>
+
+    <platform>@PLATFORM@</platform>
+  </extension>
+</addon>

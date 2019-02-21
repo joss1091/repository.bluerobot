@@ -1,0 +1,355 @@
+# XBMC Media Center language file
+# Addon Name: Sleep Playback
+# Addon id: service.sleep.playback
+# Addon version: 0.0.1
+# Addon Provider: Jose Vergara
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: 2015-09-29 07:42+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+msgctxt "Addon Summary"
+msgid "Sleep Playback - he's watching while You sleep"
+msgstr "Sleep playback - monitorea el tiempo de inactividad"
+
+msgctxt "Addon Description"
+msgid "This Idle Timer management performs defined actions after an adjusted amount of inactivity time. Those actions are stop playing Audio, Video or TV for example or some actions to execute shutdown variations like suspend, reboot poweroff or hibernate."
+msgstr "Servicio para monitorear el tiempo de inactividad, si se excede el determinado se ejecuta una accion "
+
+msgctxt "Addon Disclaimer"
+msgid "Use at your own risk. This service could conflict to other services (e.g recording services)."
+msgstr "Usar bajo tu propio riesgo, puede tener conflicto con otros servicios"
+
+
+msgctxt "#32100"
+msgid "Sleep Playback"
+msgstr "Sleep Reproductor"
+
+msgctxt "#32110"
+msgid "Activity frame"
+msgstr ""
+
+msgctxt "#32111"
+msgid "always active"
+msgstr "siempre activo"
+
+msgctxt "#32112"
+msgid "only in time frame"
+msgstr "Solo en el marco de tiempo"
+
+msgctxt "#32113"
+msgid "from"
+msgstr "Desde"
+
+msgctxt "#32114"
+msgid "until"
+msgstr "Hasta"
+
+msgctxt "#32115"
+msgid "Execute '%s' in %s secs"
+msgstr "Ejecutar '%s' en %s segundos"
+
+# Messages
+
+msgctxt "#32116"
+msgid "The activity settings of the time frame or setting of idle time are not suitable. Sleep Playback will never be activated. Please correct them."
+msgstr ""
+
+msgctxt "#32117"
+msgid "The setting of idle time in the alternate time frame is not suitable. Sleep Playback will never be activated in alternate time frame. Please correct that."
+msgstr ""
+
+msgctxt "#32118"
+msgid "Execution of idle actions aborted"
+msgstr "Ejecucion de acciones abortadas"
+
+msgctxt "#32119"
+msgid "Idle time before an action is triggered"
+msgstr "Tiempo de inactividad antes de que se desencadene una acción"
+
+msgctxt "#32120"
+msgid "max. duration of idle time"
+msgstr "Tiempo maximo "
+
+msgctxt "#32121"
+msgid "Action to execute"
+msgstr "Accion a ejecutar"
+
+msgctxt "#32122"
+msgid "Show notification on WatchDog activation"
+msgstr ""
+
+msgctxt "#32123"
+msgid "Duration of notification"
+msgstr "Tiempo de la Notificacion"
+
+msgctxt "#32124"
+msgid "Test settings of active time frame (wait 1 min)"
+msgstr ""
+
+msgctxt "#32125"
+msgid "Turn off TV (CEC)"
+msgstr "Apagar TV (CEC)"
+
+msgctxt "#32126"
+msgid "Addon ID [,parameter]"
+msgstr ""
+
+msgctxt "#32127"
+msgid "Jump into Main Menu"
+msgstr "Ir al Menu principal"
+
+msgctxt "#32128"
+msgid "Keep WatchDog alive"
+msgstr ""
+
+msgctxt "#32129"
+msgid "Perform '%s' in %s'"
+msgstr ""
+
+msgctxt "#32130"
+msgid "Stop playing media"
+msgstr "Detener reproduccion de media"
+
+msgctxt "#32131"
+msgid "Reboot"
+msgstr "Reiniciar"
+
+msgctxt "#32132"
+msgid "Shutdown"
+msgstr "Apagar"
+
+msgctxt "#32133"
+msgid "Hibernate"
+msgstr "Hibernar"
+
+msgctxt "#32134"
+msgid "Suspend"
+msgstr "Suspender"
+
+msgctxt "#32135"
+msgid "Run Addon"
+msgstr "Ejecutar complemento"
+
+msgctxt "#32136"
+msgid "Exit Kodi"
+msgstr "Salir de Kodi"
+
+msgctxt "#32139"
+msgid "Manual setting of idle timer aborted"
+msgstr ""
+
+#strings of settings outside active timeframe
+
+msgctxt "#32140"
+msgid "Perform actions outside the active time frame too"
+msgstr ""
+
+msgctxt "#32150"
+msgid "00:00 o'clock"
+msgstr ""
+
+msgctxt "#32151"
+msgid "01:00 o'clock"
+msgstr ""
+
+msgctxt "#32152"
+msgid "02:00 o'clock"
+msgstr ""
+
+msgctxt "#32153"
+msgid "03:00 o'clock"
+msgstr ""
+
+msgctxt "#32154"
+msgid "04:00 o'clock"
+msgstr ""
+
+msgctxt "#32155"
+msgid "05:00 o'clock"
+msgstr ""
+
+msgctxt "#32156"
+msgid "06:00 o'clock"
+msgstr ""
+
+msgctxt "#32157"
+msgid "07:00 o'clock"
+msgstr ""
+
+msgctxt "#32158"
+msgid "08:00 o'clock"
+msgstr ""
+
+msgctxt "#32159"
+msgid "09:00 o'clock"
+msgstr ""
+
+msgctxt "#32160"
+msgid "10:00 o'clock"
+msgstr ""
+
+msgctxt "#32161"
+msgid "11:00 o'clock"
+msgstr ""
+
+msgctxt "#32162"
+msgid "12:00 o'clock"
+msgstr ""
+
+msgctxt "#32163"
+msgid "13:00 o'clock"
+msgstr ""
+
+msgctxt "#32164"
+msgid "14:00 o'clock"
+msgstr ""
+
+msgctxt "#32165"
+msgid "15:00 o'clock"
+msgstr ""
+
+msgctxt "#32166"
+msgid "16:00 o'clock"
+msgstr ""
+
+msgctxt "#32167"
+msgid "17:00 o'clock"
+msgstr ""
+
+msgctxt "#32168"
+msgid "18:00 o'clock"
+msgstr ""
+
+msgctxt "#32169"
+msgid "19:00 o'clock"
+msgstr ""
+
+msgctxt "#32170"
+msgid "20:00 o'clock"
+msgstr ""
+
+msgctxt "#32171"
+msgid "21:00 o'clock"
+msgstr ""
+
+msgctxt "#32172"
+msgid "22:00 o'clock"
+msgstr ""
+
+msgctxt "#32173"
+msgid "23:00 o'clock"
+msgstr ""
+
+msgctxt "#32180"
+msgid "1 min"
+msgstr ""
+
+msgctxt "#32181"
+msgid "30 min"
+msgstr ""
+
+msgctxt "#32182"
+msgid "45 min"
+msgstr ""
+
+msgctxt "#32183"
+msgid "60 min"
+msgstr ""
+
+msgctxt "#32184"
+msgid "75 min"
+msgstr ""
+
+msgctxt "#32185"
+msgid "90 min"
+msgstr ""
+
+msgctxt "#32186"
+msgid "105 min"
+msgstr ""
+
+msgctxt "#32187"
+msgid "120 min"
+msgstr ""
+
+msgctxt "#32188"
+msgid "150 min"
+msgstr ""
+
+msgctxt "#32189"
+msgid "180 min"
+msgstr ""
+
+msgctxt "#32190"
+msgid "210 min"
+msgstr ""
+
+msgctxt "#32191"
+msgid "240 min"
+msgstr ""
+
+msgctxt "#32192"
+msgid "300 min"
+msgstr ""
+
+msgctxt "#32193"
+msgid "360 min"
+msgstr ""
+
+msgctxt "#32194"
+msgid "420 min"
+msgstr ""
+
+msgctxt "#32195"
+msgid "480 min"
+msgstr ""
+
+msgctxt "#32196"
+msgid "540 min"
+msgstr ""
+
+msgctxt "#32197"
+msgid "600 min"
+msgstr ""
+
+msgctxt "#32198"
+msgid "660 min"
+msgstr ""
+
+msgctxt "#32199"
+msgid "720 min"
+msgstr ""
+
+msgctxt "#32200"
+msgid "780 min"
+msgstr ""
+
+msgctxt "#32201"
+msgid "840 min"
+msgstr ""
+
+msgctxt "#32202"
+msgid "900 min"
+msgstr ""
+
+msgctxt "#32203"
+msgid "Stop Playback"
+msgstr "Detener reproduccion."
+
+msgctxt "#32204"
+msgid "Playback will stop because the idle time has already been exceeded"
+msgstr "La reproducción se va a detener por que se excedio el tiempo de inactividad."
+
+msgctxt "#32205"
+msgid "seconds to execute the action"
+msgstr " segundos para ejecutar acción"
