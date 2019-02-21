@@ -59,17 +59,19 @@
 	</extension>
 </addon>
 
-<addon id="repository.bluerobot" name="Bluerobot Repositorio" version="1.0.0" provider-name="Jose Vergara">
-    <extension point="xbmc.addon.repository" name="Bluerobot repositorio">
-        <info compressed="true">https://raw.githubusercontent.com/joss1091/repository.bluerobot/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/joss1091/repository.bluerobot/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/joss1091/master/</datadir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Repositorio para bluerobot</summary>
-        <description>Repositorio para bluerobot</description>
-        <disclaimer>Repositorio para bluerobot</disclaimer>
-        <platform>all</platform>
-    </extension>
+<addon id="repository.bluerobot" name="repositorio bluerobot" version="1.0.0" provider-name="jose vergara">
+	<extension point="xbmc.addon.repository" name="bluerobot">
+		<info compressed="true">https://raw.githubusercontent.com/joss1091/repository.bluerobot/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/joss1091/repository.bluerobot/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/joss1091/repository.bluerobot/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Official Repository of Bluerobot</summary>
+		<summary lang="de">Offizielles Repository der Kodinerds</summary>
+		<description lang="en">This is the official Repository of Bluerobot</description>
+		<description lang="de"></description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
 </addon>
 </addons>
