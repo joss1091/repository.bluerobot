@@ -27,39 +27,9 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.Catoal"
-       name="[COLOR gold]Catoal[/COLOR][COLOR blue] 5[/COLOR].[COLOR yellow]4[/COLOR].[COLOR red]0[/COLOR]"
-       version="5.4.0"
-       provider-name="Catoal">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-     <import addon="script.module.livestreamer" optional="true"/>
-     <import addon="script.module.pyamf" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-
-  <extension point="xbmc.addon.metadata">
-    <summary>Creado por Catoal</summary>
-    <description>Catoal 2017</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="skin.ghost" version="1.0.0" name="Ghost" provider-name="Ghost Systems">
 	<requires>
-		<import addon="xbmc.gui" version="5.13.0"/>
+		<import addon="xbmc.gui" version="5.14.0"/>
 		<import addon="resource.uisounds.grid" version="0.0.1"/>
 		<import addon="script.grab.fanart" version="0.14.1"/>
 		<import addon="script.skin.helper.service" version="1.0.11"/>
@@ -138,6 +108,30 @@
 		</assets>
 		<news>Obtener codigo alfanumerico para el receptor.</news>
 	</extension>
+</addon>
+
+<addon id="pvr.livestreamclient" version="1.0.3" name="PVR IPTV Livestream client" provider-name="tvstream">
+  <requires>
+    <import addon="kodi.binary.global.main" version="1.0.14"/>
+    <import addon="kodi.binary.instance.pvr" version="5.10.4"/>
+  </requires>
+  <extension
+    point="xbmc.pvrclient"
+    library_linux="pvr.livestreamclient.so.1.0.3"/>
+  <extension point="xbmc.addon.metadata">
+
+    <summary lang="en_US">Complemento Kodi PVR de IPTV para mediaflix.</summary>
+    <summary lang="es_AR">Complemento Kodi PVR de IPTV para mediaflix.</summary>
+    <summary lang="es_ES">Complemento Kodi PVR de IPTV para mediaflix.</summary>
+    <summary lang="es_MX">Complemento Kodi PVR de IPTV para mediaflix.</summary>
+
+    <description lang="en_US">Cliente PVR IPTV para la plataforma de mediaflix, Tiene soporte para listas M3u8 y tiene soporte para XMLTV</description>
+    <description lang="es_AR">Cliente PVR IPTV para la plataforma de mediaflix, Tiene soporte para listas M3u8 y tiene soporte para XMLTV</description>
+    <description lang="es_ES">Cliente PVR IPTV para la plataforma de mediaflix, Tiene soporte para listas M3u8 y tiene soporte para XMLTV</description>
+    <description lang="es_MX">Cliente PVR IPTV para la plataforma de mediaflix, Tiene soporte para listas M3u8 y tiene soporte para XMLTV</description>
+
+    <platform/>
+  </extension>
 </addon>
 
 <addon id="repository.bluerobot" name="repositorio bluerobot" version="1.0.0" provider-name="jose vergara">
