@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="service.sleep.playback" name="Sleep Playback" version="0.1.1" provider-name="Jose Vergara">
+<addon id="service.sleep.playback" name="Sleep Playback" version="0.0.1" provider-name="Jose Vergara">
   <requires>
     <import addon="xbmc.python" version="2.24.0"/>
   </requires>
@@ -81,7 +81,7 @@
 	</extension>
 </addon>
 
-<addon id="script.codegen" name="code gen" version="0.1.2" provider-name="joss1091">
+<addon id="script.codegen" name="code gen" version="0.0.1" provider-name="Jose vergara">
 	<requires>
 		<import addon="xbmc.python" version="2.14.0"/>
 		<import addon="script.module.requests" version="2.12.4"/>
