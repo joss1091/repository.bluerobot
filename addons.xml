@@ -81,7 +81,7 @@
 	</extension>
 </addon>
 
-<addon id="script.codegen" name="code gen" version="0.0.1" provider-name="Jose vergara">
+<addon id="script.codegen" name="code gen" version="0.0.2" provider-name="Jose vergara">
 	<requires>
 		<import addon="xbmc.python" version="2.14.0"/>
 		<import addon="script.module.requests" version="2.12.4"/>
