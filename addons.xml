@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.blue.telecable" version="1.0.0" name="Blue Telecable" provider-name="bluerobot team">
+<addon id="skin.blue.telecable" version="1.0.1" name="Blue Telecable" provider-name="bluerobot team">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
 		<import addon="script.embuary.helper" version="1.0.0"/>
@@ -60,8 +60,8 @@
 </addon>
 
 <addon id="service.blueelec.settings"
-       name="linux Configuration"
-       version="1.0.0"
+       name="BluerobotElec Configuration"
+       version="9.0.0"
        provider-name="Bluerobot">
    <requires>
    	<import addon="xbmc.python" version="2.1.0"/>
@@ -69,10 +69,10 @@
   <extension point="xbmc.python.script" library="default.py"></extension>
   <extension point="xbmc.service"       library="service.py" start="startup"></extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en_gb">@DISTRONAME@ Configuration</summary>
-    <summary lang="es_MX">Configuración de bluerobot</summary>
-    <description lang="en_gb">Use this addon to manage your bluerobot system's underlying operating system. From here you can manage the entire system so you don't have to worry about what runs under the hood.[CR][CR]From here you can change your network connectivity, your keyboard layout and language and enable/disable remote access including Samba and SSH.</description>
-    <description lang="es_mx">Usa este complemento para configurar el sistema operativo de tu bluerobot. Desde aquí puedes administrar todo el sistema fácilmente.[CR][CR]Desde aquí puedes cambiar la configuración de red, distribución del teclado, lenguaje del sistema y configurar Samba y SSH para controlar el acceso remoto al sistema.</description>
+    <summary lang="en_gb">BluerobotElec Configuration</summary>
+    <summary lang="es_MX">Configuración de BluerobotElec</summary>
+    <description lang="en_gb">Use this addon to manage your BluerobotElec system's underlying operating system. From here you can manage the entire system so you don't have to worry about what runs under the hood.[CR][CR]From here you can change your network connectivity, your keyboard layout and language and enable/disable remote access including Samba and SSH.</description>
+    <description lang="es_mx">Usa este complemento para configurar el sistema operativo de tu BluerobotElec. Desde aquí puedes administrar todo el sistema fácilmente.[CR][CR]Desde aquí puedes cambiar la configuración de red, distribución del teclado, lenguaje del sistema y configurar Samba y SSH para controlar el acceso remoto al sistema.</description>
     <platform>all</platform>
     <assets>
     <icon>resources/icon.png</icon>
