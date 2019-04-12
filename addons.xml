@@ -164,7 +164,7 @@
 	</extension>
 </addon>
 
-<addon id="pvr.livestreamclient" version="1.0.3.4" name="PVR IPTV Livestream client" provider-name="tvstream">
+<addon id="pvr.livestreamclient" version="1.0.4" name="PVR IPTV Livestream client" provider-name="tvstream">
   <requires>
     <import addon="kodi.binary.global.main" version="1.0.14"/>
     <import addon="kodi.binary.global.gui" version="5.12.0"/>
