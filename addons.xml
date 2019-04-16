@@ -164,11 +164,11 @@
 	</extension>
 </addon>
 
-<addon id="pvr.livestreamclient" version="1.0.4" name="PVR IPTV Livestream client" provider-name="tvstream">
+<addon id="pvr.livestreamclient" version="1.1.0.2" name="PVR IPTV Livestream client" provider-name="tvstream">
   <requires>
     <import addon="kodi.binary.global.main" version="1.0.14"/>
     <import addon="kodi.binary.global.gui" version="5.12.0"/>
-    <import addon="kodi.binary.instance.pvr" version="5.10.4"/>
+    <import addon="kodi.binary.instance.pvr" version="5.10.3"/>
   </requires>
   <extension point="xbmc.pvrclient" library_linux="pvr.livestreamclient.so.1.0.3"/>
   <extension point="xbmc.addon.metadata">
