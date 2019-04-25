@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="service.subscription"
+       name="Verificar subscripcion"
+       version="1.0.1"
+       provider-name="Bluerobot">
+   <requires>
+   	<import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests" version="2.12.4"/>
+  </requires>
+
+  <extension point="xbmc.service"     library="service.py" start="startup"></extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_gb">Verificar subscripcion del dispositivo</summary>
+    <summary lang="es_MX">Verificar subscripcion del dispositivo</summary>
+    <description lang="en_gb">Verifica que el dispositivo cuente con una subscripcion para poder ver el contenido multimedia</description>
+    <description lang="es_mx">Verifica que el dispositivo cuente con una subscripcion para poder ver el contenido multimedia</description>
+    <platform>all</platform>
+    <assets>
+    <icon></icon>
+    <fanart></fanart>
+    </assets>
+  </extension>
+</addon>
