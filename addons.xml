@@ -135,7 +135,7 @@
 	</extension>
 </addon>
 
-<addon id="script.codegen" name="code gen" version="0.0.2" provider-name="Jose vergara">
+<addon id="script.codegen" name="code gen" version="0.0.1" provider-name="Jose vergara">
 	<requires>
 		<import addon="xbmc.python" version="2.14.0"/>
 		<import addon="script.module.requests" version="2.12.4"/>
@@ -181,6 +181,38 @@
     <description lang="es_ES">Cliente PVR IPTV para la plataforma de mediaflix, Tiene soporte para listas M3u8 y tiene soporte para XMLTV</description>
     <description lang="es_MX">Cliente PVR IPTV para la plataforma de mediaflix, Tiene soporte para listas M3u8 y tiene soporte para XMLTV</description>
     <platform/>
+  </extension>
+</addon>
+
+<addon id="plugin.video.netflix" name="Netflix" version="0.13.22" provider-name="libdev + jojo + asciidisco">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.requests" version="2.12.4"/>
+    <import addon="script.module.pycryptodome" version="3.4.3"/>
+    <import addon="script.module.inputstreamhelper" version="0.3.3"/>
+    <import addon="script.module.addon.signals" version="0.0.3"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login" />
+  <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="de_DE">Netflix</summary>
+    <description lang="de_DE">Addon für Netflix VOD Services</description>
+    <disclaimer lang="de_DE">Möglicherweise sind einge Teile dieses Addons in Ihrem Land illegal, Sie sollten dies unbedingt vor der Installation überprüfen.</disclaimer>
+    <summary lang="en_GB">Netflix</summary>
+    <description lang="en_GB">Netflix VOD Services Addon</description>
+    <disclaimer lang="en_GB">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+
+    <language>en de es he hr it nl pl pt sk sv</language>
+    <platform>all</platform>
+    <license>MIT</license>
+    <website>https://www.netflix.com</website>
+    <email>public at asciidisco dot com</email>
+    <forum>https://www.kodinerds.net/index.php/Thread/55612-PreRelease-Plugin-Netflix-Inputstream/</forum>
+    <source>https://github.com/asciidisco/plugin.video.netflix</source>
+
   </extension>
 </addon>
 
