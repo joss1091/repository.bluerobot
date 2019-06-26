@@ -5,7 +5,7 @@
     <import addon="kodi.binary.global.gui" version="5.12.0"/>
     <import addon="kodi.binary.instance.pvr" version="5.10.3"/>
   </requires>
-  <extension point="xbmc.pvrclient" library_linux="pvr.livestreamclient.so.1.0.3"/>
+  <extension point="xbmc.pvrclient" library_linux="pvr.livestreamclient.so.1.1.0"/>
   <extension point="xbmc.addon.metadata">
     <summary lang="en_US">Complemento Kodi PVR de IPTV para mediaflix.</summary>
     <summary lang="es_AR">Complemento Kodi PVR de IPTV para mediaflix.</summary>

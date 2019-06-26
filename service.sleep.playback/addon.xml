@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="service.sleep.playback" name="Sleep Playback" version="0.0.1" provider-name="Jose Vergara">
-  <requires>
-    <import addon="xbmc.python" version="2.24.0"/>
-  </requires>
-  <extension point="xbmc.service" library="service.py" start="[login|startup]" />
-  <extension point="xbmc.python.script" library="default.py" />
-  <provides>executable</provides>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en_GB">Sleep Playback - he's watching while You sleep</summary>
-    <summary lang="es_MX">Sleep Playback - Servicio que detiene la reproduccion si excede un tiempo de inactividad</summary>
-    <description lang="en_GB">This Idle Timer management performs defined actions after an adjusted amount of inactivity time. Those actions are stop playing Audio, Video or TV for example or some actions to execute shutdown variations like suspend, reboot poweroff or hibernate.</description>
-    <description lang="es_MX">Servicio que monitorea el tiempo de inactividad en el dispositivo y realiza una accion. Algunas acciones que se pueden hacer es detener el reproductor, reiniciar kodi o hibernar</description>
-    <disclaimer lang="en_GB">This service could conflict to other services (e.g recording services).</disclaimer>
-    <disclaimer lang="es_MX">Este servicio puede provocar conflictos con otros servicios como ejemplo recording services</disclaimer>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, Enero 2019</license>
-    <forum></forum>
-    <website></website>
-    <email>joss1091@gmail.com</email>
-    <source></source>
-    <assets>
-      <icon>resources/media/icon.png</icon>
-      <fanart>resources/media/fanart.png</fanart>
-    </assets>
-  </extension>
+<addon id="service.sleep.playback"
+       name="Sleep Playback"
+      version="1.0"
+      provider-name="enen92, Solo0815">
+    <requires>
+		<import addon="xbmc.addon" version="14.0.0"/>
+		<import addon="xbmc.python" version="2.19.0"/>
+    </requires>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Get better control over media playback </summary>
+        <summary lang="es">Pasar video cuando exita determinada inactividad </summary>
+         <description lang="en">This service  makes  stop any playback if it exceeds a given playback time</description>
+         <description lang="es">Este servicio detiene cualquier reproduccion si se excede el liminte de inactividad.</description>
+         <forum>http://forum.kodi.tv/showthread.php?tid=211971</forum>
+    	    <source>https://gitlab.com/tvstream-iptv/service.sleep.playback</source>
+         <platform>all</platform>
+         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    </extension>
 </addon>
