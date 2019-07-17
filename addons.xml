@@ -32,107 +32,25 @@
 	</extension>
 </addon>
 
-<addon id="service.sleep.playback" name="Sleep Playback" version="0.0.1" provider-name="Jose Vergara">
-  <requires>
-    <import addon="xbmc.python" version="2.24.0"/>
-  </requires>
-  <extension point="xbmc.service" library="service.py" start="[login|startup]" />
-  <extension point="xbmc.python.script" library="default.py" />
-  <provides>executable</provides>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en_GB">Sleep Playback - he's watching while You sleep</summary>
-    <summary lang="es_MX">Sleep Playback - Servicio que detiene la reproduccion si excede un tiempo de inactividad</summary>
-    <description lang="en_GB">This Idle Timer management performs defined actions after an adjusted amount of inactivity time. Those actions are stop playing Audio, Video or TV for example or some actions to execute shutdown variations like suspend, reboot poweroff or hibernate.</description>
-    <description lang="es_MX">Servicio que monitorea el tiempo de inactividad en el dispositivo y realiza una accion. Algunas acciones que se pueden hacer es detener el reproductor, reiniciar kodi o hibernar</description>
-    <disclaimer lang="en_GB">This service could conflict to other services (e.g recording services).</disclaimer>
-    <disclaimer lang="es_MX">Este servicio puede provocar conflictos con otros servicios como ejemplo recording services</disclaimer>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, Enero 2019</license>
-    <forum></forum>
-    <website></website>
-    <email>joss1091@gmail.com</email>
-    <source></source>
-    <assets>
-      <icon>resources/media/icon.png</icon>
-      <fanart>resources/media/fanart.png</fanart>
-    </assets>
-  </extension>
-</addon>
-
-<addon id="service.blueelec.settings"
-       name="BluerobotElec Configuration"
-       version="9.0.0"
-       provider-name="Bluerobot">
-   <requires>
-   	<import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.script" library="default.py"></extension>
-  <extension point="xbmc.service"       library="service.py" start="startup"></extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_gb">BluerobotElec Configuration</summary>
-    <summary lang="es_MX">Configuración de BluerobotElec</summary>
-    <description lang="en_gb">Use this addon to manage your BluerobotElec system's underlying operating system. From here you can manage the entire system so you don't have to worry about what runs under the hood.[CR][CR]From here you can change your network connectivity, your keyboard layout and language and enable/disable remote access including Samba and SSH.</description>
-    <description lang="es_mx">Usa este complemento para configurar el sistema operativo de tu BluerobotElec. Desde aquí puedes administrar todo el sistema fácilmente.[CR][CR]Desde aquí puedes cambiar la configuración de red, distribución del teclado, lenguaje del sistema y configurar Samba y SSH para controlar el acceso remoto al sistema.</description>
-    <platform>all</platform>
-    <assets>
-    <icon>resources/icon.png</icon>
-    <fanart>resources/fanart.png</fanart>
-    </assets>
-  </extension>
-</addon>
-
-<addon id="skin.ghost" version="1.0.6" name="Ghost" provider-name="Ghost Systems">
-	<requires>
-		<import addon="xbmc.gui" version="5.14.0"/>
-		<import addon="resource.uisounds.grid" version="0.0.1"/>
-		<import addon="script.grab.fanart" version="0.14.1"/>
-		<import addon="script.skin.helper.service" version="1.0.11"/>
-		<import addon="script.skinshortcuts" version="1.0.11"/>
-		<import addon="script.watchlist" version="0.0.1"/>
-		<import addon="script.skin.helper.widgets" version="1.0.0"/>
-		<import addon="script.skin.helper.backgrounds" version="1.0.21"/>
-	</requires>
-	<extension point="xbmc.gui.skin" effectslowdown="1.00" debugging="false">
-		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml"/>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
-			<screenshot>resources/screenshots/01.jpg</screenshot>
-			<screenshot>resources/screenshots/02.jpg</screenshot>
-			<screenshot>resources/screenshots/03.jpg</screenshot>
-			<screenshot>resources/screenshots/04.jpg</screenshot>
-			<screenshot>resources/screenshots/05.jpg</screenshot>
-		</assets>
-		<summary lang="en">Ghost skin.</summary>
-		<description lang="en_GB">Ghost skin.</description>
-		<description lang="de_DE">Ghost skin.</description>
-		<description lang="es_ES">Ghost skin.</description>
-		<description lang="fr_FR">Ghost skin.</description>
-		<description lang="el_GR">Ghost skin.</description>
-		<description lang="nl_NL">Ghost skin.</description>
-		<description lang="po_NO">Ghost skin.</description>
-		<description lang="pl_PL">Ghost skin.</description>
-		<description lang="sr_RS">Ghost skin.</description>
-		<disclaimer lang="de_DE">Mäuse und Touchscreens werden nicht unterstützt</disclaimer>
-		<disclaimer lang="en_GB">Mouse and touchscreen use not supported</disclaimer>
-		<disclaimer lang="es_ES">El uso de ratón y/o pantalla táctil no está soportado</disclaimer>
-		<disclaimer lang="fi_FI">Hiiren ja kosketusnäytön käyttöä ei tueta</disclaimer>
-		<disclaimer lang="fr_FR">Souris et écran tactile non supportés</disclaimer>
-		<disclaimer lang="gl_ES">Rato e pantalla táctil non soportados</disclaimer>
-		<disclaimer lang="el_GR">Το ποντίκι και το πληκτρολόγιο δεν υποστηρίζονται</disclaimer>
-		<disclaimer lang="ko_KR">마우스와 터치 스크린을 지원하지 않습니다 </disclaimer>
-		<disclaimer lang="lt_LT">Pelė ir liečiamasis ekranas nepalaikomi</disclaimer>
-		<disclaimer lang="nl_NL">Muis of touchscreen bediening wordt niet ondersteund</disclaimer>
-		<disclaimer lang="po_NO">Mus og touch-skjerm er ikke støttet</disclaimer>
-		<disclaimer lang="pl_PL">Mysz i ekran dotykowy nie są wspierane</disclaimer>
-		<disclaimer lang="ro_RO">Nu există suport pentru touchscreen şi mouse</disclaimer>
-		<disclaimer lang="sr_RS">Миш и тачскрин нису подржани</disclaimer>
-		<disclaimer lang="sv_SE">Mus och pekskärm stöds inte</disclaimer>
-		<platform>all</platform>
-		<license></license>
-	</extension>
+<addon id="service.sleep.playback"
+       name="Sleep Playback"
+      version="1.0"
+      provider-name="enen92, Solo0815">
+    <requires>
+		<import addon="xbmc.addon" version="14.0.0"/>
+		<import addon="xbmc.python" version="2.19.0"/>
+    </requires>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Get better control over media playback </summary>
+        <summary lang="es">Pasar video cuando exita determinada inactividad </summary>
+         <description lang="en">This service  makes  stop any playback if it exceeds a given playback time</description>
+         <description lang="es">Este servicio detiene cualquier reproduccion si se excede el liminte de inactividad.</description>
+         <forum>http://forum.kodi.tv/showthread.php?tid=211971</forum>
+    	    <source>https://gitlab.com/tvstream-iptv/service.sleep.playback</source>
+         <platform>all</platform>
+         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    </extension>
 </addon>
 
 <addon id="script.codegen" name="code gen" version="0.0.1" provider-name="Jose vergara">
@@ -170,7 +88,7 @@
     <import addon="kodi.binary.global.gui" version="5.12.0"/>
     <import addon="kodi.binary.instance.pvr" version="5.10.3"/>
   </requires>
-  <extension point="xbmc.pvrclient" library_linux="pvr.livestreamclient.so.1.0.3"/>
+  <extension point="xbmc.pvrclient" library_linux="pvr.livestreamclient.so.1.1.0"/>
   <extension point="xbmc.addon.metadata">
     <summary lang="en_US">Complemento Kodi PVR de IPTV para mediaflix.</summary>
     <summary lang="es_AR">Complemento Kodi PVR de IPTV para mediaflix.</summary>
@@ -184,7 +102,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.netflix" name="Netflix" version="0.13.22" provider-name="libdev + jojo + asciidisco">
+<addon id="plugin.video.netflix" name="Netflix" version="0.13.23" provider-name="libdev + jojo + asciidisco">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
     <import addon="script.module.requests" version="2.12.4"/>
