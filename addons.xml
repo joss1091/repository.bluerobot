@@ -1,5 +1,101 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="plugin.video.netflix" name="Netflix" version="0.13.26" provider-name="libdev + jojo + asciidisco">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.requests" version="2.12.4"/>
+    <import addon="script.module.pycryptodome" version="3.4.3"/>
+    <import addon="script.module.inputstreamhelper" version="0.3.3"/>
+    <import addon="script.module.addon.signals" version="0.0.3"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login" />
+  <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="de_DE">Netflix</summary>
+    <description lang="de_DE">Addon für Netflix VOD Services</description>
+    <disclaimer lang="de_DE">Möglicherweise sind einge Teile dieses Addons in Ihrem Land illegal, Sie sollten dies unbedingt vor der Installation überprüfen.</disclaimer>
+    <summary lang="en_GB">Netflix</summary>
+    <description lang="en_GB">Netflix VOD Services Addon</description>
+    <disclaimer lang="en_GB">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+
+    <language>en de es he hr it nl pl pt sk sv</language>
+    <platform>all</platform>
+    <license>MIT</license>
+    <website>https://www.netflix.com</website>
+    <email>public at asciidisco dot com</email>
+    <forum>https://www.kodinerds.net/index.php/Thread/55612-PreRelease-Plugin-Netflix-Inputstream/</forum>
+    <source>https://github.com/asciidisco/plugin.video.netflix</source>
+
+  </extension>
+</addon>
+
+<addon id="service.subscription"
+       name="Verificar subscripcion"
+       version="1.0.1"
+       provider-name="Bluerobot">
+   <requires>
+   	<import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests" version="2.12.4"/>
+  </requires>
+
+  <extension point="xbmc.service"     library="service.py" start="startup"></extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_gb">Verificar subscripcion del dispositivo</summary>
+    <summary lang="es_MX">Verificar subscripcion del dispositivo</summary>
+    <description lang="en_gb">Verifica que el dispositivo cuente con una subscripcion para poder ver el contenido multimedia</description>
+    <description lang="es_mx">Verifica que el dispositivo cuente con una subscripcion para poder ver el contenido multimedia</description>
+    <platform>all</platform>
+    <assets>
+    <icon></icon>
+    <fanart></fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="pvr.livestreamclient" version="1.1.0.3" name="PVR IPTV Livestream client" provider-name="tvstream">
+  <requires>
+    <import addon="kodi.binary.global.main" version="1.0.14"/>
+    <import addon="kodi.binary.global.gui" version="5.12.0"/>
+    <import addon="kodi.binary.instance.pvr" version="5.10.3"/>
+  </requires>
+  <extension point="xbmc.pvrclient" library_linux="pvr.livestreamclient.so.1.1.0"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_US">Complemento Kodi PVR de IPTV para mediaflix.</summary>
+    <summary lang="es_AR">Complemento Kodi PVR de IPTV para mediaflix.</summary>
+    <summary lang="es_ES">Complemento Kodi PVR de IPTV para mediaflix.</summary>
+    <summary lang="es_MX">Complemento Kodi PVR de IPTV para mediaflix.</summary>
+    <description lang="en_US">Cliente PVR IPTV para la plataforma de mediaflix, Tiene soporte para listas M3u8 y tiene soporte para XMLTV</description>
+    <description lang="es_AR">Cliente PVR IPTV para la plataforma de mediaflix, Tiene soporte para listas M3u8 y tiene soporte para XMLTV</description>
+    <description lang="es_ES">Cliente PVR IPTV para la plataforma de mediaflix, Tiene soporte para listas M3u8 y tiene soporte para XMLTV</description>
+    <description lang="es_MX">Cliente PVR IPTV para la plataforma de mediaflix, Tiene soporte para listas M3u8 y tiene soporte para XMLTV</description>
+    <platform/>
+  </extension>
+</addon>
+
+<addon id="service.sleep.playback"
+       name="Sleep Playback"
+      version="1.0"
+      provider-name="enen92, Solo0815">
+    <requires>
+		<import addon="xbmc.addon" version="14.0.0"/>
+		<import addon="xbmc.python" version="2.19.0"/>
+    </requires>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Get better control over media playback </summary>
+        <summary lang="es">Pasar video cuando exita determinada inactividad </summary>
+         <description lang="en">This service  makes  stop any playback if it exceeds a given playback time</description>
+         <description lang="es">Este servicio detiene cualquier reproduccion si se excede el liminte de inactividad.</description>
+         <forum>http://forum.kodi.tv/showthread.php?tid=211971</forum>
+    	    <source>https://gitlab.com/tvstream-iptv/service.sleep.playback</source>
+         <platform>all</platform>
+         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    </extension>
+</addon>
+
 <addon id="plugin.video.youtube" name="YouTube" version="6.8.2" provider-name="anxdpanic, bromix">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
@@ -117,25 +213,20 @@
 	</extension>
 </addon>
 
-<addon id="service.sleep.playback"
-       name="Sleep Playback"
-      version="1.0"
-      provider-name="enen92, Solo0815">
-    <requires>
-		<import addon="xbmc.addon" version="14.0.0"/>
-		<import addon="xbmc.python" version="2.19.0"/>
-    </requires>
-    <extension point="xbmc.service" library="service.py" start="login"/>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Get better control over media playback </summary>
-        <summary lang="es">Pasar video cuando exita determinada inactividad </summary>
-         <description lang="en">This service  makes  stop any playback if it exceeds a given playback time</description>
-         <description lang="es">Este servicio detiene cualquier reproduccion si se excede el liminte de inactividad.</description>
-         <forum>http://forum.kodi.tv/showthread.php?tid=211971</forum>
-    	    <source>https://gitlab.com/tvstream-iptv/service.sleep.playback</source>
-         <platform>all</platform>
-         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    </extension>
+<addon id="repository.bluerobot" name="repositorio bluerobot" version="1.0.0" provider-name="jose vergara">
+	<extension point="xbmc.addon.repository" name="bluerobot">
+		<info compressed="true">https://raw.githubusercontent.com/joss1091/repository.bluerobot/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/joss1091/repository.bluerobot/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/joss1091/repository.bluerobot/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Official Repository of Bluerobot</summary>
+		<summary lang="de">Offizielles Repository der Kodinerds</summary>
+		<description lang="en">This is the official Repository of Bluerobot</description>
+		<description lang="de"></description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="script.codegen" name="code gen" version="0.0.1" provider-name="Jose vergara">
@@ -164,97 +255,6 @@
 			<screenshot></screenshot>
 		</assets>
 		<news>Obtener codigo alfanumerico para el receptor.</news>
-	</extension>
-</addon>
-
-<addon id="pvr.livestreamclient" version="1.1.0.2" name="PVR IPTV Livestream client" provider-name="tvstream">
-  <requires>
-    <import addon="kodi.binary.global.main" version="1.0.14"/>
-    <import addon="kodi.binary.global.gui" version="5.12.0"/>
-    <import addon="kodi.binary.instance.pvr" version="5.10.3"/>
-  </requires>
-  <extension point="xbmc.pvrclient" library_linux="pvr.livestreamclient.so.1.1.0"/>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_US">Complemento Kodi PVR de IPTV para mediaflix.</summary>
-    <summary lang="es_AR">Complemento Kodi PVR de IPTV para mediaflix.</summary>
-    <summary lang="es_ES">Complemento Kodi PVR de IPTV para mediaflix.</summary>
-    <summary lang="es_MX">Complemento Kodi PVR de IPTV para mediaflix.</summary>
-    <description lang="en_US">Cliente PVR IPTV para la plataforma de mediaflix, Tiene soporte para listas M3u8 y tiene soporte para XMLTV</description>
-    <description lang="es_AR">Cliente PVR IPTV para la plataforma de mediaflix, Tiene soporte para listas M3u8 y tiene soporte para XMLTV</description>
-    <description lang="es_ES">Cliente PVR IPTV para la plataforma de mediaflix, Tiene soporte para listas M3u8 y tiene soporte para XMLTV</description>
-    <description lang="es_MX">Cliente PVR IPTV para la plataforma de mediaflix, Tiene soporte para listas M3u8 y tiene soporte para XMLTV</description>
-    <platform/>
-  </extension>
-</addon>
-
-<addon id="plugin.video.netflix" name="Netflix" version="0.13.26" provider-name="libdev + jojo + asciidisco">
-  <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
-    <import addon="script.module.requests" version="2.12.4"/>
-    <import addon="script.module.pycryptodome" version="3.4.3"/>
-    <import addon="script.module.inputstreamhelper" version="0.3.3"/>
-    <import addon="script.module.addon.signals" version="0.0.3"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="login" />
-  <extension point="xbmc.addon.metadata">
-    <reuselanguageinvoker>true</reuselanguageinvoker>
-    <summary lang="de_DE">Netflix</summary>
-    <description lang="de_DE">Addon für Netflix VOD Services</description>
-    <disclaimer lang="de_DE">Möglicherweise sind einge Teile dieses Addons in Ihrem Land illegal, Sie sollten dies unbedingt vor der Installation überprüfen.</disclaimer>
-    <summary lang="en_GB">Netflix</summary>
-    <description lang="en_GB">Netflix VOD Services Addon</description>
-    <disclaimer lang="en_GB">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
-
-    <language>en de es he hr it nl pl pt sk sv</language>
-    <platform>all</platform>
-    <license>MIT</license>
-    <website>https://www.netflix.com</website>
-    <email>public at asciidisco dot com</email>
-    <forum>https://www.kodinerds.net/index.php/Thread/55612-PreRelease-Plugin-Netflix-Inputstream/</forum>
-    <source>https://github.com/asciidisco/plugin.video.netflix</source>
-
-  </extension>
-</addon>
-
-<addon id="service.subscription"
-       name="Verificar subscripcion"
-       version="1.0.1"
-       provider-name="Bluerobot">
-   <requires>
-   	<import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.requests" version="2.12.4"/>
-  </requires>
-
-  <extension point="xbmc.service"     library="service.py" start="startup"></extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_gb">Verificar subscripcion del dispositivo</summary>
-    <summary lang="es_MX">Verificar subscripcion del dispositivo</summary>
-    <description lang="en_gb">Verifica que el dispositivo cuente con una subscripcion para poder ver el contenido multimedia</description>
-    <description lang="es_mx">Verifica que el dispositivo cuente con una subscripcion para poder ver el contenido multimedia</description>
-    <platform>all</platform>
-    <assets>
-    <icon></icon>
-    <fanart></fanart>
-    </assets>
-  </extension>
-</addon>
-
-<addon id="repository.bluerobot" name="repositorio bluerobot" version="1.0.0" provider-name="jose vergara">
-	<extension point="xbmc.addon.repository" name="bluerobot">
-		<info compressed="true">https://raw.githubusercontent.com/joss1091/repository.bluerobot/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/joss1091/repository.bluerobot/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/joss1091/repository.bluerobot/master/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Official Repository of Bluerobot</summary>
-		<summary lang="de">Offizielles Repository der Kodinerds</summary>
-		<description lang="en">This is the official Repository of Bluerobot</description>
-		<description lang="de"></description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
 	</extension>
 </addon>
 </addons>
